@@ -15,24 +15,22 @@ var Plane = function() {
   this.wings = 2;
 };
 
-/** Delete this line and the one at the bottom when you're ready for exercise 18
+var myCar = new Car();
+var airlinePlane = new Plane();
  
     suite('Unit Tests Exercise 11 - Array Identitiy',function(){
       // 18 #instanceOf asserts that an object is an instance of a constructor 
       // Use #instanceOf or #notInstanceOf where appropriate
       test('does split return an array?', function() {
-        assert.fail(myCar, Plane);
+        assert.notInstanceOf(myCar, Plane);
         });
       test('does indexOf return an array?', function() {  
-        assert.fail(airlinePlane, Object, 'everything is an Object');
+        assert.instanceOf(airlinePlane, Object, 'everything is an Object');
         });
       test('does split return an array?', function() {
-        assert.fail(airlinePlane, Plane);
+        assert.instanceOf(airlinePlane, Plane);
         });
       test('does split return an array?', function() {
-        assert.fail(myCar.wheels, String );
+        assert.notInstanceOf(myCar.wheels, String );
         });
     });
-
-
-// Delete this line when you're ready for exercise 18 **/
